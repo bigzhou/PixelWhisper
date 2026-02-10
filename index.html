@@ -2,44 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pixel Whisper Games</title>
+  <title>Pixel Whisper Online Game</title>
   <style>
     body {
-      background-color: #f9f9f5; /* 温和背景色 */
+      background-color: #c3f473; /* 白色背景 */
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 40px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
       color: #333;
     }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    p.vision {
+      text-align: center;
+      font-size: 18px;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+    }
+
+    p.contact {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    h2.products {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 每行4个大概 */
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 每行 4 张左右 */
       gap: 20px;
       justify-items: center;
     }
+
     .game-item {
       width: 180px; /* 控制竖屏长方形宽度 */
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
       border-radius: 8px;
       overflow: hidden;
       transition: transform 0.2s;
     }
+
     .game-item img {
       width: 100%;
       display: block;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .game-item:hover {
       transform: scale(1.05);
     }
+
+    .game-title {
+      margin: 8px 0;
+      font-weight: bold;
+      color: #333;
+    }
+
     @media (max-width: 900px) {
       .gallery {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
       }
     }
+
     @media (max-width: 600px) {
       .gallery {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -48,14 +85,45 @@
   </style>
 </head>
 <body>
-  <h1>Pixel Whisper Games</h1>
+  <h1>Pixel Whisper Online Game</h1>
+
+  <p class="vision">
+    Our vision is to create mini-games that players around the world love — fun, casual, and easy to enjoy anytime.
+  </p>
+
+  <p class="contact">
+    Contact us: <a href="mailto:zhousheng@pixelwhispergames.com">zhousheng@pixelwhispergames.com</a>
+  </p>
+
+  <h2 class="products">
+    Current Products: Available on Facebook and WeChat Mini Games
+  </h2>
+
   <div class="gallery">
-    <div class="game-item"><img src="game1.png" alt="Game 1"></div>
-    <div class="game-item"><img src="game2.png" alt="Game 2"></div>
-    <div class="game-item"><img src="game3.png" alt="Game 3"></div>
-    <div class="game-item"><img src="game4.png" alt="Game 4"></div>
-    <div class="game-item"><img src="game5.png" alt="Game 5"></div>
-    <div class="game-item"><img src="game6.png" alt="Game 6"></div>
+    <div class="game-item">
+      <div class="game-title">Calorie Dash</div>
+      <img src="game1.png" alt="Game 1">
+    </div>
+    <div class="game-item">
+      <div class="game-title">Silent Waters</div>
+      <img src="game2.png" alt="Game 2">
+    </div>
+    <div class="game-item">
+      <div class="game-title">Game 3 Name</div>
+      <img src="gamecontinue.png" alt="Game 3">
+    </div>
+    <!-- <div class="game-item">
+      <div class="game-title">Game 4 Name</div>
+      <img src="game4.png" alt="Game 4">
+    </div>
+    <div class="game-item">
+      <div class="game-title">Game 5 Name</div>
+      <img src="game5.png" alt="Game 5">
+    </div>
+    <div class="game-item">
+      <div class="game-title">Game 6 Name</div>
+      <img src="game6.png" alt="Game 6">
+    </div> -->
     <!-- 继续添加游戏图片 -->
   </div>
 </body>
