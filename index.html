@@ -2,31 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shanghai Pixel Whisper Online Game Co., Ltd.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Whisper Games</title>
+  <style>
+    body {
+      background-color: #f9f9f5; /* 温和背景色 */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 每行4个大概 */
+      gap: 20px;
+      justify-items: center;
+    }
+    .game-item {
+      width: 180px; /* 控制竖屏长方形宽度 */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .game-item img {
+      width: 100%;
+      display: block;
+    }
+    .game-item:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      }
+    }
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+    }
+  </style>
 </head>
 <body>
-
-<h1>Shanghai Pixel Whisper Online Game Co., Ltd.</h1>
-
-<p>
-Shanghai Pixel Whisper Online Game Co., Ltd. is an independent game development company
-focused on creating casual and arcade-style games.
-</p>
-
-<p>
-Our vision is to create small games that are loved by players around the world.
-</p>
-
-<p>
-This website is used for developer verification and company information display
-for platforms including Facebook Instant Games.
-</p>
-
-<p>
-Contact Email:<br>
-<a href="mailto:qqdazhou@gmail.com">qqdazhou@gmail.com</a>
-</p>
-
+  <h1>Pixel Whisper Games</h1>
+  <div class="gallery">
+    <div class="game-item"><img src="game1.jpg" alt="Game 1"></div>
+    <div class="game-item"><img src="game2.jpg" alt="Game 2"></div>
+    <div class="game-item"><img src="game3.jpg" alt="Game 3"></div>
+    <div class="game-item"><img src="game4.jpg" alt="Game 4"></div>
+    <div class="game-item"><img src="game5.jpg" alt="Game 5"></div>
+    <div class="game-item"><img src="game6.jpg" alt="Game 6"></div>
+    <!-- 继续添加游戏图片 -->
+  </div>
 </body>
 </html>
