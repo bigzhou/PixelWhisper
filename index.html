@@ -2,129 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pixel Whisper Online Game</title>
-  <style>
-    body {
-      background-color: #65d3ad; /* 白色背景 */
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
-      color: #333;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 36px;
-    }
-
-    p.vision {
-      text-align: center;
-      font-size: 18px;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto 20px auto;
-    }
-
-    p.contact {
-      text-align: center;
-      font-size: 16px;
-      margin-bottom: 40px;
-      color: #555;
-    }
-
-    h2.products {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 每行 4 张左右 */
-      gap: 20px;
-      justify-items: center;
-    }
-
-    .game-item {
-      width: 180px; /* 控制竖屏长方形宽度 */
-      text-align: center;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: transform 0.2s;
-    }
-
-    .game-item img {
-      width: 100%;
-      display: block;
-      border-radius: 4px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .game-item:hover {
-      transform: scale(1.05);
-    }
-
-    .game-title {
-      margin: 8px 0;
-      font-weight: bold;
-      color: #333;
-    }
-
-    @media (max-width: 900px) {
-      .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      }
-    }
-
-    @media (max-width: 600px) {
-      .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pixel Whisper is an independent game studio focused on iOS and Mini Games. Discover small games made for everyday moments of play.">
+  <meta name="theme-color" content="#f5f3eb">
+  <title>Pixel Whisper — iOS & Mini Games</title>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <h1>Pixel Whisper Online Game</h1>
-
-  <p class="vision">
-    Our vision is to create games that players around the world love — fun, casual, and easy to enjoy anytime.
-  </p>
-
-  <p class="contact">
-    Contact us: <a href="mailto:contact@pixelwhispergames.com">contact@pixelwhispergames.com</a>
-  </p>
-
-  <h2 class="products">
-    Current Products: Available on Facebook and WeChat Mini Games
-  </h2>
-
-  <div class="gallery">
-    <div class="game-item">
-      <div class="game-title">Calorie Dash</div>
-      <img src="game1.png" alt="Game 1">
-    </div>
-    <div class="game-item">
-      <div class="game-title">Silent Waters</div>
-      <img src="game2.png" alt="Game 2">
-    </div>
-    <div class="game-item">
-      <div class="game-title">Coming soon</div>
-      <img src="gamecontinue.png" alt="Game 3">
-    </div>
-    <!-- <div class="game-item">
-      <div class="game-title">Game 4 Name</div>
-      <img src="game4.png" alt="Game 4">
-    </div>
-    <div class="game-item">
-      <div class="game-title">Game 5 Name</div>
-      <img src="game5.png" alt="Game 5">
-    </div>
-    <div class="game-item">
-      <div class="game-title">Game 6 Name</div>
-      <img src="game6.png" alt="Game 6">
-    </div> -->
-    <!-- 继续添加游戏图片 -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Pixel Whisper home"><span class="brand-mark" aria-hidden="true">pw.</span><span>Pixel Whisper<span class="brand-caption">INDEPENDENT GAME STUDIO</span></span></a>
+      <nav aria-label="Main navigation"><a href="#games">Our games</a><a href="index2.html">The studio</a><a class="nav-contact" href="mailto:contact@pixelwhispergames.com">Say hello <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> FOCUSED ON iOS & MINI GAMES</p>
+          <h1 id="hero-title">Small games.<br><span>Big little moments.</span></h1>
+          <p class="hero-copy">A little challenge. A moment of discovery. A reason to play again.<br class="desktop-break"> We make playful experiences that fit into your everyday.</p>
+          <a class="button" href="#games">Explore our games <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="hero-note"><span class="note-label">OUR PHILOSOPHY</span><p>Easy to pick up.<br>Hard to put down.</p><span class="note-caption">A little world of play,<br>one pixel at a time.</span></aside>
+      </section>
+      <section id="games" class="games-section" aria-labelledby="games-title">
+        <div class="section-heading"><div><p class="eyebrow">A LITTLE OF WHAT WE MAKE</p><h2 id="games-title">Our games</h2></div><p>Small screens. Room for adventure.</p></div>
+        <div class="game-grid">
+          <article class="game-card dash">
+            <div class="game-description"><span class="game-number">01 / CALORIE DASH</span><div><p class="game-category">A LITTLE MOMENTUM</p><h3>Calorie<br>Dash</h3><p>A playful dash through a pixel-sized city.</p></div><span class="game-detail">Keep moving. Enjoy the ride.</span></div>
+            <figure class="game-screen"><img src="game1.png" width="177" height="304" alt="Calorie Dash gameplay showing a runner, city trees and an on-screen jump button" fetchpriority="high"></figure>
+          </article>
+          <article class="game-card waters">
+            <div class="game-description"><span class="game-number">02 / SILENT WATERS</span><div><p class="game-category">BENEATH THE SURFACE</p><h3>Silent<br>Waters</h3><p>A small screen with a whole ocean below.</p></div><span class="game-detail">Dive into something different.</span></div>
+            <figure class="game-screen"><img src="game2.png" width="177" height="304" alt="Silent Waters gameplay showing an underwater submarine and an aircraft above the sea" fetchpriority="high"></figure>
+          </article>
+        </div>
+        <div class="coming-next"><span class="coming-label">UP NEXT</span><p>More little worlds are on the way.</p><span class="coming-status">Coming soon</span></div>
+      </section>
+      <section class="studio-strip" aria-labelledby="studio-title"><p class="eyebrow">THE STUDIO</p><div><h2 id="studio-title">Made with care.<br>Played everywhere life happens.</h2><p>We’re an independent game studio creating fun, approachable experiences for players around the world. Our focus is iOS and Mini Games — thoughtful little games, made for the moments in between.</p><a class="text-link" href="index2.html">Meet Pixel Whisper <span aria-hidden="true">↗</span></a></div></section>
+      <section class="contact-panel" aria-labelledby="contact-title"><div><p class="eyebrow">LET’S TALK</p><h2 id="contact-title">Good things start<br>with a hello.</h2></div><a href="mailto:contact@pixelwhispergames.com">contact@pixelwhispergames.com <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer class="site-footer"><span>© Pixel Whisper</span><span>Shanghai Pixel Whisper Online Game Co., Ltd.</span><a href="index2.html">Company information</a></footer>
   </div>
 </body>
 </html>
